@@ -1,10 +1,11 @@
 %%
 clear all  % Clear all variables from the workspace.
 close all  % Close all figure windows.
-cd('C:\Users\sacce001\Dropbox\PCA_NOISE_ALL\mfiles')  % Change directory to the specified path.
+dir = "my working directory"
+cd(dir)  % Change directory to the specified path.
 
 %%
-dirout = 'C:\Users\sacce001\Dropbox\PCA_NOISE_ALL\Results_Simulations';  % Output directory for results.
+dirout = '..\Results_Simulations';  % Output directory for results.
 
 fileresult = fullfile(dirout,strcat('Results_Correlated_ADD_MULT_', char(datetime("today")), '.mat'));
 % Create the full file path for saving results, including today's date.
